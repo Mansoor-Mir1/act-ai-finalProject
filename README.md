@@ -1,10 +1,10 @@
 # 🐍 AI Python Learning Platform
 
-**AI Python Learning Platform** is a complete AI-powered educational web application designed to help students and beginners learn Python programming through a structured, interactive, and guided learning environment.
+**AI Python Learning Platform** is a complete AI-powered educational web application designed to help beginners learn Python programming through a structured, interactive, and guided learning environment.
 
 Instead of requiring learners to use separate websites for lessons, coding practice, quizzes, AI assistance, progress tracking, and learning resources, the platform brings these features together into one application.
 
-The project includes a complete student learning portal, an integrated AI Python tutor called **PyCoach AI**, an in-browser Python coding environment, progress tracking, quizzes, practice problems, authentication, and a protected administration system.
+The project includes a student learning portal, an integrated AI Python tutor called **PyCoach AI**, an in-browser Python coding environment, progress tracking, quizzes, practice problems, authentication, and a protected administration system.
 
 ---
 
@@ -21,9 +21,7 @@ https://act-ai-final-project-nine.vercel.app
 
 Beginner Python learners often have to switch between multiple platforms to learn effectively.
 
-For example, a student may use one website for Python notes, another for coding practice, another for quizzes, an AI chatbot for explanations, and another source for learning resources.
-
-This makes the learning process fragmented and can be confusing for students who are just beginning programming.
+A student may use one website for Python notes, another for coding practice, another for quizzes, an AI chatbot for explanations, and other websites for learning resources. This can make the learning process fragmented and confusing, especially for beginners.
 
 **AI Python Learning Platform solves this problem by providing a single structured environment where students can:**
 
@@ -70,9 +68,7 @@ The platform is primarily designed for:
 
 Students can follow a structured Python learning roadmap containing lessons organised by topic and difficulty.
 
-The curriculum covers learning stages from beginner concepts toward more advanced Python topics.
-
-Each lesson can display its current status, including:
+Lessons can display their current learning status:
 
 - Not Started
 - In Progress
@@ -80,7 +76,7 @@ Each lesson can display its current status, including:
 
 ### 📖 Interactive Lessons
 
-Each lesson provides structured educational content including:
+Lessons provide educational content including:
 
 - Python theory
 - Programming explanations
@@ -99,7 +95,7 @@ Students can:
 
 - Write Python code
 - Edit example code
-- Run Python directly inside the application
+- Run Python inside the application
 - View console output
 - Reset code
 - Copy code
@@ -109,71 +105,63 @@ Python execution is supported in the browser using **Pyodide/WebAssembly**.
 
 ### 🎯 Practice Problems
 
-Students can access practice problems connected to their Python learning.
-
-These activities allow learners to apply concepts rather than only reading theory.
+Students can access practice problems connected to their Python lessons, allowing them to apply concepts instead of only reading theory.
 
 ### 📝 AI Quiz
 
-The platform includes quiz functionality to test student understanding of Python concepts.
-
-Students can use quizzes as part of the learning process to check whether they understand the current topic.
+The platform includes quiz functionality for testing students' understanding of Python concepts.
 
 ### 📊 Progress Tracking
 
-The application tracks student learning progress.
-
 Students can:
 
-- See their overall progress percentage
+- See their overall progress
 - View completed lessons
-- Identify lessons that are in progress
-- Identify lessons that have not been started
+- Identify lessons in progress
+- Identify lessons not yet started
 - Manually mark lessons as complete
 - Continue learning from their current position
 
 ### ▶️ Continue Learning
 
-The **Continue** feature helps students quickly return to the appropriate lesson instead of manually searching through the curriculum.
+The **Continue** functionality allows students to quickly return to their learning path and continue their Python studies.
 
-### 🔖 Lesson Interaction
+### 🌐 Learning Resources
 
-The learning interface also provides lesson-level controls designed to make navigation and studying easier.
+Students can access curated learning resources added and managed through the administration system.
 
 ---
 
 # 🤖 PyCoach AI — AI-Powered Python Tutor
 
-A major feature of the project is **PyCoach AI**, an integrated AI Python programming tutor.
+One of the core features of the project is **PyCoach AI**, an integrated AI Python programming tutor powered by **Google Gemini**.
 
-PyCoach AI is available directly inside the student learning workspace so students do not have to leave the platform when they need help.
+PyCoach AI is available directly inside the student learning workspace, allowing students to receive programming assistance without leaving the platform.
 
-The AI functionality is powered by **Google Gemini**.
-
-## What PyCoach AI Can Do
+## What PyCoach AI Does
 
 PyCoach AI can assist students with:
 
 - Explaining Python concepts
 - Providing step-by-step learning assistance
-- Giving hints for exercises
+- Giving hints
 - Providing relevant code examples
 - Helping with practice problems
-- Supporting AI-generated quizzes
+- Supporting quizzes
 - Debugging Python code
 - Reviewing student code
 - Explaining programming errors
 - Helping students understand programming logic
 
-The goal of PyCoach AI is not simply to provide answers, but to act as an educational assistant while the student learns Python.
+The purpose of PyCoach AI is not simply to provide answers, but to support students while they learn Python.
 
 ---
 
-## 🧠 AI Instructions / System Behaviour
+## 🧠 AI Instructions / System Prompt
 
-PyCoach AI is instructed to behave as a Python-focused educational assistant.
+PyCoach AI is guided by custom instructions designed specifically for Python education.
 
-Its instruction design follows these principles:
+The AI follows the following educational behaviour:
 
 > You are PyCoach, an AI Python programming tutor integrated into a Python learning platform. Your purpose is to help students learn and understand Python programming clearly and accurately.
 >
@@ -187,15 +175,15 @@ Its instruction design follows these principles:
 >
 > Keep responses focused on Python programming and educational learning. Responses should be clear, helpful, concise, and appropriate for beginner programmers.
 
-The Gemini API is accessed through the application's AI integration. Sensitive Gemini credentials are configured through environment variables rather than being committed directly to the public repository.
+The Gemini API is integrated into the application while sensitive Gemini credentials are stored using environment variables rather than being committed to the public repository.
 
 ---
 
 # 🛡️ Admin Dashboard
 
-The application contains a separate protected administration system.
+The application includes a separate protected administration system.
 
-A permanent administrator can access an admin dashboard containing system information and content-management functionality.
+The permanent administrator can access an administration dashboard for monitoring and managing learning content.
 
 ## 📊 System Overview
 
@@ -208,7 +196,7 @@ The administrator can view platform information including:
 
 ## 🌐 Resource Management
 
-The administrator can manage programming learning resources.
+The administrator can manage learning resources.
 
 Available functionality includes:
 
@@ -216,18 +204,16 @@ Available functionality includes:
 - Edit resources
 - Delete resources
 - Search resources
-- Filter resources by topic
+- Filter resources
 - Manage resource titles
-- Manage resource descriptions
+- Manage descriptions
 - Manage external learning links
-
-These curated resources are then available to students through the learning platform.
 
 ## 📚 Curriculum Management
 
 The administrator can manage the Python curriculum.
 
-Available curriculum-management functionality includes:
+Available functionality includes:
 
 - Add lessons
 - Edit lessons
@@ -235,22 +221,21 @@ Available curriculum-management functionality includes:
 - Search lessons
 - Filter lessons
 - Publish lessons
-- Unpublish/manage draft lessons
+- Manage draft/unpublished lessons
 - Organise lessons by module
 - Manage lesson difficulty and ordering
 
 ## 🔒 Admin Privacy Restrictions
 
-The administrator role is intentionally separated from private student learning activity.
+The administrator role is separated from private student learning activity.
 
-The admin interface restricts access to private student functionality such as:
+The admin system does not provide access to private student functionality such as:
 
 - Student AI conversations
 - Private student notes
-- Direct modification of student progress
-- Student account mutation through the learning dashboard
+- Direct modification of individual student progress
 
-This separation helps maintain student privacy while allowing the administrator to manage platform content.
+This separation allows the administrator to manage platform content while maintaining separation between administrative and student functionality.
 
 ---
 
@@ -263,9 +248,9 @@ The system separates users into:
 - Students
 - Permanent Administrator
 
-Students are directed to the student learning environment, while administrator functionality is protected by role-based access.
+Students are directed to the student learning environment, while administrator functionality is protected through role-based access.
 
-Authentication sessions can persist in the browser until the user signs out.
+Authentication sessions persist in the browser until the user signs out or the session is otherwise cleared.
 
 ---
 
@@ -273,9 +258,15 @@ Authentication sessions can persist in the browser until the user signs out.
 
 The application uses **Cloud Firestore** for cloud-based application data.
 
-Firestore is used to support application functionality such as student information, learning progress, content, and resources.
+Firestore supports application functionality such as:
 
-Firestore Security Rules are included in the project to control database access.
+- User information
+- Learning progress
+- Lesson completion
+- Curriculum content
+- Learning resources
+
+Firestore Security Rules are used to control access to application data.
 
 ---
 
@@ -288,7 +279,7 @@ Firestore Security Rules are included in the project to control database access.
 - Vite
 - Tailwind CSS
 - Markdown rendering
-- Syntax-highlighted programming content
+- Syntax highlighting
 
 ## Python Execution
 
@@ -311,7 +302,7 @@ Firestore Security Rules are included in the project to control database access.
 
 - Google Gemini
 - Gemini API
-- Custom AI instructions for PyCoach AI
+- Custom PyCoach AI instructions
 
 ## Development Tools
 
@@ -329,25 +320,25 @@ Firestore Security Rules are included in the project to control database access.
 # 🏗️ Application Architecture
 
 ```text
-                       AI Python Learning Platform
-                                  │
-                    ┌─────────────┴─────────────┐
-                    │                           │
-                 Student                     Admin
-                    │                           │
-                    ▼                           ▼
-             Student Portal              Admin Dashboard
-                    │                           │
-       ┌────────────┼────────────┐      ┌───────┴────────┐
-       │            │            │      │                │
-    Lessons      Code Editor   Progress Resources     Curriculum
-       │            │            │      Management    Management
-       │            │            │
-       ▼            ▼            ▼
-   PyCoach AI    Pyodide      Firestore
-       │
-       ▼
-   Gemini API
+                    AI Python Learning Platform
+                              │
+                ┌─────────────┴─────────────┐
+                │                           │
+             Student                     Admin
+                │                           │
+                ▼                           ▼
+         Student Portal              Admin Dashboard
+                │                           │
+     ┌──────────┼──────────┐       ┌────────┴────────┐
+     │          │          │       │                 │
+  Lessons   Code Editor  Progress Resources      Curriculum
+     │          │          │     Management      Management
+     │          │          │
+     ▼          ▼          ▼
+ PyCoach AI   Pyodide   Firestore
+     │
+     ▼
+ Gemini API
 
 Authentication
      │
@@ -365,7 +356,7 @@ The following screenshots demonstrate the major parts of the application.
 
 The authentication interface allows registered users to securely access the platform.
 
-![Account Sign In](Screenshot 2026-07-27 212415.png)
+![Account Sign In](Screenshot%202026-07-27%20212415.png)
 
 ---
 
@@ -373,7 +364,7 @@ The authentication interface allows registered users to securely access the plat
 
 The main learning workspace combines the curriculum roadmap, Python lesson content, interactive code editor, progress tracking, practice functionality, and PyCoach AI.
 
-![Student Learning Workspace](Screenshot 2026-07-27 212350.png)
+![Student Learning Workspace](Screenshot%202026-07-27%20212350.png)
 
 ---
 
@@ -381,26 +372,22 @@ The main learning workspace combines the curriculum roadmap, Python lesson conte
 
 The administrator dashboard provides system information together with resource and curriculum management functionality.
 
-![Admin Dashboard](Screenshot 2026-07-27 213024.png)
-
----
-
-
+![Admin Dashboard](Screenshot%202026-07-27%20213024.png)
 
 ---
 
 # 🔄 Student Learning Workflow
 
-A typical student uses the application through the following process:
+A typical student uses the application through the following workflow:
 
 ```text
 Register / Sign In
         ↓
 Student Learning Portal
         ↓
-Select a Python Lesson
+Select Python Lesson
         ↓
-Read Theory & Examples
+Read Theory & Code Examples
         ↓
 Write and Run Python Code
         ↓
@@ -417,7 +404,7 @@ Progress Updates
 Continue to Next Lesson
 ```
 
-This creates a structured learning cycle instead of requiring the student to use several disconnected learning platforms.
+This creates a structured learning cycle instead of requiring students to use several disconnected learning platforms.
 
 ---
 
@@ -427,7 +414,6 @@ This creates a structured learning cycle instead of requiring the student to use
 act-ai-final-project/
 │
 ├── src/                         # Main application source code
-├── screenshots/                 # README application screenshots
 ├── .env.example                 # Environment variable template
 ├── .gitignore                   # Files excluded from Git
 ├── firebase-applet-config.json  # Firebase web configuration
@@ -435,11 +421,11 @@ act-ai-final-project/
 ├── firestore.rules              # Firestore Security Rules
 ├── index.html                   # Application HTML entry point
 ├── metadata.json                # Application metadata
-├── package.json                 # Dependencies and npm scripts
+├── package.json                 # Dependencies and scripts
 ├── server.ts                    # Server/API functionality
 ├── tsconfig.json                # TypeScript configuration
 ├── vite.config.ts               # Vite configuration
-└── README.md                    # Complete project documentation
+└── README.md                    # Project documentation
 ```
 
 ---
@@ -448,13 +434,13 @@ act-ai-final-project/
 
 ## Prerequisites
 
-Make sure the following are installed or available:
+Before running the project, make sure you have:
 
 - Node.js
 - npm
 - Git
-- Firebase project
-- Gemini API key
+- A Firebase project
+- A Gemini API key
 
 ---
 
@@ -466,7 +452,7 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 
 ---
 
-## 2. Enter the Project Directory
+## 2. Open the Project Directory
 
 ```bash
 cd act-ai-final-project
@@ -484,11 +470,9 @@ npm install
 
 ## 4. Configure Environment Variables
 
-Use the provided `.env.example` file as a template.
+Use the included `.env.example` file as a template.
 
-Create your local environment configuration and provide the required values.
-
-Example:
+Create your local environment file and provide the required values:
 
 ```env
 GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
@@ -496,9 +480,9 @@ APP_URL="YOUR_APP_URL"
 ADMIN_SECURITY_KEY="YOUR_ADMIN_SECURITY_KEY"
 ```
 
-**Never commit real API keys, passwords, or security keys to the public repository.**
+Never commit real API keys, passwords, or security credentials to the public repository.
 
-The `.gitignore` file excludes local `.env` files while allowing `.env.example` to remain available as a configuration template.
+The project's `.gitignore` excludes local `.env` files while allowing `.env.example` to remain available as a configuration template.
 
 ---
 
@@ -506,44 +490,67 @@ The `.gitignore` file excludes local `.env` files while allowing `.env.example` 
 
 A Firebase project is required for authentication and database functionality.
 
-Ensure that:
+Make sure:
 
 - Firebase Authentication is configured
 - Email/Password authentication is enabled
-- Cloud Firestore is available
-- Firestore Security Rules are configured appropriately
+- Cloud Firestore is configured
+- Appropriate Firestore Security Rules are deployed
 
 ---
 
 ## 6. Start the Development Server
 
+Run:
+
 ```bash
 npm run dev
 ```
 
-Open the local address displayed by the development server in your browser.
+Then open the local address displayed by the development server in your browser.
 
 ---
 
 # 🔒 Security
 
-Security was considered during the development and deployment of the application.
-
-The project uses:
+The application uses several security measures:
 
 - Firebase Authentication
-- Role-based access control
-- Protected student/admin routes
+- Role-based student/admin access
+- Protected application routes
 - Firestore Security Rules
-- Server-side handling for sensitive AI functionality
-- Environment variables for sensitive credentials
-- `.gitignore` protection for local environment files
+- Environment variables for sensitive server-side credentials
+- `.gitignore` protection for environment files
+- Server-side verification for sensitive administrator functionality
 
-Real Gemini API credentials and other sensitive environment variables should never be committed to the repository.
+Real Gemini API credentials and other sensitive environment variables are not intended to be committed to the repository.
 
-### Firebase Web Configuration
+## Firebase Web Configuration
 
-The repository contains Firebase web configuration required by the frontend application. Firebase web API configuration identifies the Firebase project, while access to protected application data is controlled through authentication, API restrictions, and Firestore Security Rules.
+The repository contains Firebase web configuration required by the frontend application.
+
+Firebase web configuration identifies the Firebase project and allows the frontend to communicate with Firebase services. Access to protected application data is controlled through authentication and Firestore Security Rules.
+
+---
+
+# 💡 Original Project Idea
+
+This project addresses a problem commonly faced by beginner programmers: learning resources are often spread across multiple platforms.
+
+A learner may need:
+
+- A tutorial website for theory
+- An online IDE for coding
+- A separate quiz website
+- An AI assistant for questions
+- Different websites for learning resources
+- Another method for tracking progress
+
+The idea behind AI Python Learning Platform was to bring these activities together into one structured learning environment.
+
+The core learning workflow is:
+
+**Learn → Code → Practise → Ask AI → Test → Track Progress**
 
 ---
 
@@ -551,72 +558,40 @@ The repository contains Firebase web configuration required by the frontend appl
 
 The main objectives of this project were to:
 
-- Solve a real learning problem faced by beginner programmers
+- Solve a real learning problem for beginner programmers
 - Create a structured Python learning environment
 - Build a complete working application from authentication to deployment
-- Integrate AI into the actual learning workflow
+- Integrate AI into the learning workflow
 - Allow students to practise Python directly inside the application
 - Provide AI-powered assistance through PyCoach AI
 - Track student learning progress
 - Implement separate student and administrator functionality
-- Provide curriculum and learning-resource management
+- Provide curriculum and resource management
 - Store application data using a cloud database
 - Deploy the finished application publicly
 
 ---
 
-# 💡 Original Project Idea
-
-This project was created to address a problem I observed while learning and working with programming resources: learners frequently need to switch between tutorials, coding environments, AI assistants, quizzes, and resource websites.
-
-Rather than creating another static Python tutorial website, the idea was to combine these learning activities into a single guided platform.
-
-The resulting application combines:
-
-**Learn → Code → Practise → Ask AI → Test → Track Progress**
-
-into one learning workflow.
-
----
-
-# 🔮 Future Improvements
-
-The current version focuses specifically on Python learning.
-
-Possible future improvements include:
-
-- Additional programming languages
-- More Python lessons
-- More practice challenges
-- Advanced progress analytics
-- Additional AI tutoring capabilities
-- Expanded administrator content tools
-- More curated learning resources
-- Additional student personalisation
-
-These are future possibilities and are not claimed as functionality of the current version.
-
----
 
 # 👨‍💻 Project Information
 
 **Project Name:** AI Python Learning Platform  
 **AI Tutor:** PyCoach AI  
 **Project Type:** AI-Powered Educational Web Application  
-**Primary Language Taught:** Python  
-**Deployment:** Vercel  
-**Repository:** GitHub  
-**Project Type:** Individual Final Project
+**Primary Programming Language Taught:** Python  
+**Deployment Platform:** Vercel  
+**Source Code:** GitHub  
+**Development:** Individual Final Project
 
 ---
 
 # 🔗 Important Links
 
-### 🌐 Live Application
+## 🌐 Live Application
 
 https://act-ai-final-project-nine.vercel.app
 
-### 💻 Public GitHub Repository
+## 💻 Public GitHub Repository
 
 YOUR_GITHUB_REPOSITORY_URL
 
@@ -624,4 +599,4 @@ YOUR_GITHUB_REPOSITORY_URL
 
 ## 📄 Final Project
 
-This application was designed, built, tested, and deployed as an individual final project with the goal of creating a complete AI-powered solution to a real learning problem.
+AI Python Learning Platform was designed, built, tested, and deployed as an individual final project with the goal of creating a complete AI-powered solution to a real learning problem.
