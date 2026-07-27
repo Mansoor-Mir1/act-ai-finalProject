@@ -1,0 +1,6 @@
+{
+  "name": "AI Python Learning Platform",
+  "description": "An AI-powered interactive Python programming learning platform for beginners featuring code execution, interactive lessons, AI tutor assistance, and real-time feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

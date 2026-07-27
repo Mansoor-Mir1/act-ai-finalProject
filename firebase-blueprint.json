@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "Registered students and administrators",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["student", "admin"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "lessonProgress": {
+      "title": "Lesson Progress",
+      "description": "Student quiz and practice progress for a specific lesson",
+      "type": "object",
+      "properties": {
+        "lessonId": { "type": "string" },
+        "userId": { "type": "string" },
+        "currentQuestion": { "type": "number" },
+        "totalQuestions": { "type": "number" },
+        "score": { "type": "number" },
+        "completedQuestions": { "type": "number" },
+        "quizStatus": { "type": "string", "enum": ["Not Started", "In Progress", "Completed"] },
+        "practiceStatus": { "type": "string", "enum": ["Not Started", "In Progress", "Completed"] },
+        "startedAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "completedAt": { "type": "string" },
+        "accuracy": { "type": "number" },
+        "isCompleted": { "type": "boolean" }
+      },
+      "required": ["lessonId", "userId", "quizStatus", "practiceStatus"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profile collection"
+    },
+    "/users/{userId}/progress/{lessonId}": {
+      "schema": "lessonProgress",
+      "description": "Subcollection containing lesson practice and quiz progress"
+    }
+  }
+}
