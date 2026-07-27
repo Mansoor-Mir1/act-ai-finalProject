@@ -593,7 +593,7 @@ https://act-ai-final-project-nine.vercel.app
 
 ## 💻 Public GitHub Repository
 
-[YOUR_GITHUB_REPOSITORY_URL](https://github.com/Mansoor-Mir1/act-ai-finalProject/tree/main)
+https://github.com/Mansoor-Mir1/act-ai-finalProject/tree/main
 
 ---
 
