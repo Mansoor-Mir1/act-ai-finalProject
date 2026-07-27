@@ -365,7 +365,7 @@ The following screenshots demonstrate the major parts of the application.
 
 The authentication interface allows registered users to securely access the platform.
 
-![Account Sign In](screenshots/login.png)
+![Account Sign In](Screenshot 2026-07-27 212415.png)
 
 ---
 
@@ -373,7 +373,7 @@ The authentication interface allows registered users to securely access the plat
 
 The main learning workspace combines the curriculum roadmap, Python lesson content, interactive code editor, progress tracking, practice functionality, and PyCoach AI.
 
-![Student Learning Workspace](screenshots/student-workspace.png)
+![Student Learning Workspace](Screenshot 2026-07-27 212350.png)
 
 ---
 
@@ -381,7 +381,7 @@ The main learning workspace combines the curriculum roadmap, Python lesson conte
 
 The administrator dashboard provides system information together with resource and curriculum management functionality.
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](Screenshot 2026-07-27 213024.png)
 
 ---
 
